@@ -1,13 +1,19 @@
 import logo from './logo.svg';
+import React from 'react'
 import './App.css';
 
+import Sparkle from './Sparkle'
+
 function App() {
+  const name = 'ahao'
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <React.Fragment>
+            Edit <code>src/App.js</code> and save to reload.
+          </React.Fragment>
         </p>
         <a
           className="App-link"
@@ -15,9 +21,10 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn {name}
         </a>
       </header>
+      <Sparkle />
     </div>
   );
 }
